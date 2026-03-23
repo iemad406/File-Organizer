@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    list-style: none;
+}
+
+body {
+    background: #f4f6f9;
+    padding: 20px;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+.card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card-header h2 {
+    font-size: 18px;
+    color: #333;
+}
+
+.file-count {
+    background: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+.file-list {
+    list-style: none;
+}
+
+.file-list li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    color: #555;
+    display: flex;
+    align-items: center;
+}
+
+.file-list li::before {
+    content: "📄";
+    margin-right: 10px;
+}
+
+.file-list li:last-child {
+    border-bottom: none;
+}
+@media (max-width: 500px) {
+    .card {
+        padding: 15px;
+    }
+
+    .card-header h2 {
+        font-size: 16px;
+    }
+
+    .file-list li {
+        font-size: 13px;
+    }
+}

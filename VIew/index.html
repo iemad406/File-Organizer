@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>File-Orginizer</title>
+</head>
+<body>
+<div class="container">
+    <form id="form" method="POST" autocomplete="off">
+        <h2>Directory Path Checker</h2>
+
+        <div class="form-group">
+            <label for="path">Enter Directory Path</label>
+            <input 
+                type="text" 
+                id="path" 
+                name="path" 
+                placeholder="e.g. C:/Users/Documents"
+            >
+        </div>
+
+        <button type="submit">Originize Files</button>
+
+        
+    </form>
+    <div class="error" id="errorMsg">
+            
+        </div>
+
+        <div class="success" id="successMsg">
+            
+        </div>
+</div>
+<script src="./js/index.js"></script>
+</body>
+</html>
